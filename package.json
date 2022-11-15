@@ -2,11 +2,15 @@
     "name": "dig3134-html_and_javascript",
     "type": "module",
     "jest": {
+        "transform": {
+            "^.+\\.(ts|tsx)$": "babel-jest"
+        },
         "testEnvironment": "node",
         "setupFiles": [
             "<rootDir>.ucf/setupTests.js"
         ],
         "globals": {
+            
             "ts-jest": {
                 "isolatedModules": false
             }
